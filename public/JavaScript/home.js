@@ -24,7 +24,7 @@ window.onload = function() {
     myHeaders.append("x-auth-token", getCookie("token"));
     myHeaders.append("Content-Type", "application/json");
     console.log("Token", getCookie("token"))
-     // Fetch user data using the token in the headers
+     // Fetch user data using the token in the header
      fetch("http://52.158.43.53:8080/api/users/info", {
         headers: myHeaders
     })
